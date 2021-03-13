@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'MRB-DOT-LOL'; 
+    font-style: normal; 
+    font-weight: 800; 
+    src: url(EditorialNew-Regular.otf) format('opentype');
+ }
+
+body {
+    background-color: black;
+}
+
+h1, h2, body {
+    margin: 0;
+}
+
+.universe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.universe canvas {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.box-art {
+    height: calc(525px + 4rem + 1rem + 0.5rem);
+    width: 525px;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.box-art h1 {
+    font-size: 4rem;
+    font-family: 'MRB-DOT-LOL';
+}
+
+.hero-image {
+    flex: 1 1 auto;
+    background: url("my_dithered_face.jpg");
+    margin-bottom: 0.5rem;
+}
